@@ -10,13 +10,15 @@ namespace EODReactApp.Models.AccountViewModels
     {
         [Required]
         [EmailAddress]
+        [Display(Name = "Podaj email:")]
         public string Email { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
+        [Display(Name = "Podaj hasło:")]
         public string Password { get; set; }
 
-        [Display(Name = "Remember me?")]
+        [Display(Name = "Zapamiętać hasło?")]
         public bool RememberMe { get; set; }
     }
 }
